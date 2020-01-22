@@ -24,27 +24,7 @@ public class FibonacciSeries {
 	}
 	 int rfibonacci(int n)
 	 {
-		 int temp = 0;
-		   
-		   if(n==1)
-			{
-				//System.out.print("1");
-				return 1;
-			}
-		   else if(n==2)
-			{
-				//System.out.print(" 1");
-				return 1;
-			}
-			else if(n>2)
-			{
-				temp=(rfibonacci(n-1)+rfibonacci(n-2));
-				//System.out.print(" "+ temp);
-				return temp;
-			}
-			return temp;
-				
-			
+		 return (n==1||n==2)? 1:(rfibonacci(n-1)+rfibonacci(n-2));
 	 }
 	public static void main(String[] args) {
 		//int n;
